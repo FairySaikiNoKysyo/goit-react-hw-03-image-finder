@@ -16,7 +16,7 @@ export class App extends Component {
     error: false,
     loadMore: 0,
   };
-  async componentDidUpdate(prevProps,prevState) {
+  async componentDidUpdate(_,prevState) {
     if (
       prevState.query !== this.state.query ||
       prevState.page !== this.state.page
